@@ -18,8 +18,27 @@
         </div>
     </header>
     <main>
-        <label for="messageIn" class="messageInTitulo">Digite sua mensagem</label>
-        <textarea required class="messageIn" id="messageIn"></textarea>
+
+        <section class="msgInBox">
+            <label for="msgIn" class="msgInTitle">Digite sua mensagem</label>
+            <textarea required id="msgIn" autofocus></textarea>
+
+        </section>
+
+        <section class="buttons">
+            <div class="buttonBox">
+                <p>&#9888; Apenas letras minúsculas e sem acento.</p>
+                <input type="button" value="Criptografar" class="encode">
+                <input type="button" value="Descriptografar" class="decode">
+            </div>
+        </section>
+        
+        <section class="msgOutBox">
+            <textarea required id="msgOut" autofocus placeholder="Nenhuma mensagem para transcrever..."></textarea>
+        </section>
+
+
+
     </main>
     <footer>
 

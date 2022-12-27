@@ -1,44 +1,204 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    background: #fffeec;
+    background: #7d7c6e;
 }
 
 
-
-/* HEADER */
+/* resolução MENOR que 512 */ @media screen and (max-width: 512px) {
 
 .titulo {
-    width: 260px;
-    margin: 20px 0 0 20px;
+   width: 374px;
+   margin: 20px auto;
 }
+
 header h1 {
-    font-size: 35px;
-    font-weight: 900;
-    color: #7A1FA1;
+   font-size: 50px;
+   font-weight: 900;
+   color: #7A1FA1;
 }
 
 .subtitulo {
-    font-size: 1rem;
-    text-align: right;
-    margin: 5px 5px 0;
-    color: #7A1FA1;
-    font-weight: 400;
- }
+   font-size: 1.2rem;
+   text-align: right;
+   margin: 5px 5px 0;
+   color: #7A1FA1;
+   font-weight: 400;
+}
+}
+/* resolução entre 512 e 1024 */@media screen and (min-width: 512px) and (max-width: 1024px) {
+ 
+   .titulo {
+      width: 520px;
+      margin: 20px auto;
+   }
+
+   header h1 {
+      font-size: 70px;
+      font-weight: 900;
+      color: #7A1FA1;
+  }
+  
+   .subtitulo {
+      font-size: 2rem;
+      text-align: right;
+      margin: 5px 5px 0;
+      color: #7A1FA1;
+      font-weight: 400;
+   }
 
 
 
- /* MAIN */
+   .msgInBox {
+      width: 800px;
+      display:block;
+      margin: 10px auto;
+   }
 
- .messageInTitulo {
-    margin: 50px 0 0 20px;
-    font-size: 20px;
- }
- .messageIn {
-    display: block;
-    resize: none;
-    border-radius: 10px;
-    margin: 20px 0 0 20px;
-    width: 50%;
-    height: 350px;
+   .msgInTitle {
+      display: block;
+      text-align: center;
+      margin: 40px auto 10px;
+      font-size: 35px;
+      font-weight: 400;
+   }
+   
+   #msgIn {
+      display: block;
+      resize: none;
+      border-radius: 20px;
+      border: none;
+      margin: 15px auto;
+      padding: 20px;
+      width: 90%;
+      height: 35vh;
+      font-size: 35px;
+   }
+
+   .msgOutBox {
+      position: absolute;
+      margin: 10px auto;
+      top: 90px;
+   }
+
+   #msgOut {
+      resize: none;
+      border-radius: 20px;
+      border: none;
+      margin-right: 3vw;
+      padding: 20px;
+      width: 33vw;
+      height: 2vmin;
+      font-size: 21px;
+      background-color: #7A1FA1;
+   }
+
+   .buttons {
+      display: inline-block;
+      margin: 10px 0;
+   }
+   .buttonBox {
+      width: 512px;
+      margin: 10px auto;
+   }
+   .buttons p {
+      text-align: center;
+      margin: 10px auto;
+   }
+
+   .encode, .decode {
+      font-size: 18px;
+      border-radius: 15px;
+      width: 150px;
+      height: 7vh;
+      padding: 0;
+      margin-right: 0.5vw;
+      margin: 10px auto;
+   }
+
+
+}
+ /* resolução maior que 1024 */  @media screen and (min-width: 1024px) {
+
+   .titulo {
+      width: 260px;
+      margin: 20px auto;
+  }
+
+   header h1 {
+      font-size: 35px;
+      font-weight: 900;
+      color: #7A1FA1;
+  }
+  
+   .subtitulo {
+      font-size: 1rem;
+      text-align: right;
+      margin: 5px 5px 0;
+      color: #7A1FA1;
+      font-weight: 400;
+   }
+  
+
+
+   .msgInBox {
+      display: block;
+      margin: 13vh 0 0 2vw;
+   }
+   .msgInTitle {
+      margin: 0 0 0 30px;
+      font-size: 21px;
+      font-weight: 400;
+   }
+   
+   #msgIn {
+      display: block;
+      resize: none;
+      border-radius: 20px;
+      border: none;
+      margin: 15px 0 0;
+      padding: 20px;
+      width: 50vw;
+      height: 35vh;
+      font-size: 21px;
+   }
+  
+   .msgOutBox {
+      display: inline-block;
+      margin: 10px auto;
+      position: absolute;
+      top: 90px;
+      right: 20px;
+   }
+  
+   #msgOut {
+     display: block;
+     resize: none;
+     border-radius: 20px;
+     border: none;
+     margin-right: 3vw;
+     padding: 20px;
+     width: 33vw;
+     height: 70vmin;
+     font-size: 21px;
+     background-color: ;
+   }
+  
+   .buttons {
+     margin: 35px 0 0 2vw;
+   }
+  
+   .buttons p {
+      text-align: left;
+     margin: 10px 0 0 5px;
+   }
+  
+   .encode, .decode {
+     font-size: 18px;
+     border-radius: 15px;
+     width: 150px;
+     height: 7vh;
+     padding: 0;
+     margin-right: 0.5vw;
+   }
  }

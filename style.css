@@ -5,52 +5,29 @@ body {
 }
 
 
-/* resolução MENOR que 512 */ @media screen and (max-width: 512px) {
+/* resolução MENOR que 512 */ @media screen and (max-width: 511px) {
 
-.titulo {
-   width: 374px;
-   margin: 20px auto;
-}
-
-header h1 {
-   font-size: 50px;
-   font-weight: 900;
-   color: #7A1FA1;
-}
-
-.subtitulo {
-   font-size: 1.2rem;
-   text-align: right;
-   margin: 5px 5px 0;
-   color: #7A1FA1;
-   font-weight: 400;
-}
-}
-/* resolução entre 512 e 1024 */@media screen and (min-width: 512px) and (max-width: 1024px) {
- 
    .titulo {
-      width: 520px;
+      width: 374px;
       margin: 20px auto;
    }
 
    header h1 {
-      font-size: 70px;
+      font-size: 50px;
       font-weight: 900;
       color: #7A1FA1;
-  }
-  
+   }
+
    .subtitulo {
-      font-size: 2rem;
+      font-size: 1.2rem;
       text-align: right;
       margin: 5px 5px 0;
       color: #7A1FA1;
       font-weight: 400;
    }
 
-
-
-   .msgInBox {
-      width: 800px;
+   .msgInBox, .msgOutBox {
+      width: 85vw;
       display:block;
       margin: 10px auto;
    }
@@ -59,11 +36,11 @@ header h1 {
       display: block;
       text-align: center;
       margin: 40px auto 10px;
-      font-size: 35px;
+      font-size: 28px;
       font-weight: 400;
    }
-   
-   #msgIn {
+
+   #msgIn, #msgOut {
       display: block;
       resize: none;
       border-radius: 20px;
@@ -71,62 +48,149 @@ header h1 {
       margin: 15px auto;
       padding: 20px;
       width: 90%;
-      height: 35vh;
+      height: 20vh;
       font-size: 35px;
    }
 
-   .msgOutBox {
-      position: absolute;
-      margin: 10px auto;
-      top: 90px;
-   }
-
-   #msgOut {
-      resize: none;
-      border-radius: 20px;
-      border: none;
-      margin-right: 3vw;
-      padding: 20px;
-      width: 33vw;
-      height: 2vmin;
-      font-size: 21px;
-      background-color: #7A1FA1;
-   }
-
    .buttons {
-      display: inline-block;
+      display: block;
       margin: 10px 0;
    }
+
    .buttonBox {
-      width: 512px;
+      width: 85vw;
       margin: 10px auto;
    }
+
    .buttons p {
       text-align: center;
-      margin: 10px auto;
+      margin: 10px auto 0 auto;
    }
 
    .encode, .decode {
       font-size: 18px;
       border-radius: 15px;
-      width: 150px;
-      height: 7vh;
+      width: 42vw;
+      height: 50px;
       padding: 0;
       margin-right: 0.5vw;
       margin: 10px auto;
    }
 
+   .buttonBoxCopy {
+      width: 252px;
+      margin: 10px auto;
+   }
+   .copy {
+      font-size: 18px;
+      border-radius: 15px;
+      width: 252px;
+      height: 50px;
+      padding: 0;
+      margin-right: 0.5vw;
+      margin: 10px auto;
+   }
 
+   footer p {
+      text-align: center;
+
+   }
+
+}
+/* resolução entre 512 e 1024 */@media screen and (min-width: 512px) and (max-width: 1023px) {
+ 
+   .titulo {
+      width: 460px;
+      margin: 20px auto;
+   }
+
+   header h1 {
+      text-align: center;
+      font-size: 60px;
+      font-weight: 900;
+      color: #7A1FA1;
+  }
+  
+   .subtitulo {
+      font-size: 1.3rem;
+      text-align: right;
+      margin: 5px 5px 0;
+      color: #7A1FA1;
+      font-weight: 400;
+   }
+
+
+
+   .msgInBox, .msgOutBox {
+      width: 85vw;
+      display:block;
+      margin: 10px auto;
+   }
+
+   .msgInTitle {
+      display: block;
+      text-align: center;
+      margin: 40px auto 10px;
+      font-size: 28px;
+      font-weight: 400;
+   }
+   
+   #msgIn, #msgOut {
+      display: block;
+      resize: none;
+      border-radius: 20px;
+      border: none;
+      margin: 15px auto;
+      padding: 20px;
+      width: 90%;
+      height: 20vh;
+      font-size: 35px;
+   }
+
+   .buttons {
+      display: block;
+      margin: 10px 0;
+   }
+
+   .buttonBox {
+      width: 512px;
+      margin: 10px auto;
+   }
+
+   .buttons p {
+      text-align: center;
+      margin: 10px auto 0 auto;
+   }
+
+   .encode, .decode, .copy {
+      font-size: 18px;
+      border-radius: 15px;
+      width: 252px;
+      height: 50px;
+      padding: 0;
+      margin-right: 0.5vw;
+      margin: 10px auto;
+   }
+
+   .buttonBoxCopy {
+      width: 252px;
+      margin: 10px auto;
+   }
+
+   footer p {
+      text-align: center;
+
+   }
 }
  /* resolução maior que 1024 */  @media screen and (min-width: 1024px) {
 
    .titulo {
-      width: 260px;
+      width: 360px;
       margin: 20px auto;
   }
 
    header h1 {
-      font-size: 35px;
+      font-size: 48.5px;
       font-weight: 900;
       color: #7A1FA1;
   }
@@ -167,7 +231,7 @@ header h1 {
       display: inline-block;
       margin: 10px auto;
       position: absolute;
-      top: 90px;
+      top: 100px;
       right: 20px;
    }
   
@@ -179,9 +243,8 @@ header h1 {
      margin-right: 3vw;
      padding: 20px;
      width: 33vw;
-     height: 70vmin;
+     height: 65vmin;
      font-size: 21px;
-     background-color: ;
    }
   
    .buttons {
@@ -189,16 +252,30 @@ header h1 {
    }
   
    .buttons p {
-      text-align: left;
-     margin: 10px 0 0 5px;
+     text-align: left;
+     margin: 10px 0 10px 5px;
    }
-  
-   .encode, .decode {
+
+   .encode, .decode, .copy {
      font-size: 18px;
      border-radius: 15px;
      width: 150px;
      height: 7vh;
      padding: 0;
      margin-right: 0.5vw;
+   }
+
+   .buttonBoxCopy {
+      position: absolute;
+      right: 20px;
+      bottom: 25px;
+      width: 200px;
+      margin: 10px auto;
+   }
+
+   footer p {
+      position: absolute;
+      bottom: 10px;
+      left: 30px;
    }
  }

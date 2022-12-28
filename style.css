@@ -1,7 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    background: #7d7c6e;
+    background: #FAFAF3;
 }
 
 
@@ -34,6 +34,7 @@ body {
 
    .msgInTitle {
       display: block;
+      color: #7A1FA1;
       text-align: center;
       margin: 40px auto 10px;
       font-size: 28px;
@@ -45,6 +46,8 @@ body {
       resize: none;
       border-radius: 20px;
       border: none;
+      outline: none;
+      outline: pink;
       margin: 15px auto;
       padding: 20px;
       width: 90%;
@@ -64,17 +67,23 @@ body {
 
    .buttons p {
       text-align: center;
+      color: #7A1FA1;
       margin: 10px auto 0 auto;
    }
 
    .encode, .decode {
-      font-size: 18px;
+      border: none;
+      background-color: #7A1FA1;
+      color: #FAFAF3;
+      font-size: 21px;
+      font-weight: bold;
       border-radius: 15px;
       width: 42vw;
       height: 50px;
       padding: 0;
       margin-right: 0.5vw;
       margin: 10px auto;
+      transition: 1s all;
    }
 
    .buttonBoxCopy {
@@ -82,16 +91,27 @@ body {
       margin: 10px auto;
    }
    .copy {
-      font-size: 18px;
+      border: none;
+      background-color: #7A1FA1;
+      color: #FAFAF3;
+      font-size: 25px;
+      font-weight: bold;
       border-radius: 15px;
       width: 252px;
       height: 50px;
       padding: 0;
       margin-right: 0.5vw;
       margin: 10px auto;
+      transition: 1s all;
    }
 
+   .copy:hover, .encode:hover, .decode:hover  {
+      background-color: #cf77b3;
+      
+   }  
+
    footer p {
+      color: #7A1FA1;
       text-align: center;
 
    }
@@ -129,6 +149,7 @@ body {
 
    .msgInTitle {
       display: block;
+      color: #7A1FA1;
       text-align: center;
       margin: 40px auto 10px;
       font-size: 28px;
@@ -140,6 +161,7 @@ body {
       resize: none;
       border-radius: 20px;
       border: none;
+      outline: none;
       margin: 15px auto;
       padding: 20px;
       width: 90%;
@@ -163,13 +185,18 @@ body {
    }
 
    .encode, .decode, .copy {
-      font-size: 18px;
+      border: none;
+      background-color: #7A1FA1;
+      color: #FAFAF3;
+      font-size: 25px;
+      font-weight: bold;
       border-radius: 15px;
       width: 252px;
       height: 50px;
       padding: 0;
       margin-right: 0.5vw;
       margin: 10px auto;
+      transition: 1s all;
    }
 
    .buttonBoxCopy {
@@ -177,7 +204,13 @@ body {
       margin: 10px auto;
    }
 
+   .copy:hover, .encode:hover, .decode:hover  {
+      background-color: #cf77b3;
+      
+   }  
+
    footer p {
+      color: #7A1FA1;
       text-align: center;
 
    }
@@ -211,6 +244,7 @@ body {
    }
    .msgInTitle {
       margin: 0 0 0 30px;
+      color: #7A1FA1;
       font-size: 21px;
       font-weight: 400;
    }
@@ -220,6 +254,7 @@ body {
       resize: none;
       border-radius: 20px;
       border: none;
+      outline: none;
       margin: 15px 0 0;
       padding: 20px;
       width: 50vw;
@@ -240,6 +275,7 @@ body {
      resize: none;
      border-radius: 20px;
      border: none;
+     outline: none;
      margin-right: 3vw;
      padding: 20px;
      width: 33vw;
@@ -253,17 +289,56 @@ body {
   
    .buttons p {
      text-align: left;
+     color: #7A1FA1;
      margin: 10px 0 10px 5px;
    }
 
-   .encode, .decode, .copy {
-     font-size: 18px;
+   .encode {
+     border: none;
+     background-color: #7A1FA1;
+     color: #FAFAF3;
+     font-size: 25px;
+     font-weight: bold;
      border-radius: 15px;
-     width: 150px;
+     width: 165px;
      height: 7vh;
      padding: 0;
      margin-right: 0.5vw;
+     transition: 1s all;
    }
+
+   .decode {
+      border: none;
+      background-color: #7A1FA1;
+      color: #FAFAF3;
+      font-size: 25px;
+      font-weight: bold;
+      border-radius: 15px;
+      width: 200px;
+      height: 7vh;
+      padding: 0;
+      margin-right: 0.5vw;
+      transition: 1s all;
+   }
+
+   .copy {
+      border: none;
+      background-color: #7A1FA1;
+      color: #FAFAF3;
+      font-size: 25px;
+      font-weight: bold;
+      border-radius: 15px;
+      width: 150px;
+      height: 7vh;
+      padding: 0;
+      margin-right: 0.5vw;
+      transition: 1s all;
+   }
+
+   .copy:hover, .encode:hover, .decode:hover  {
+      background-color: #cf77b3;
+      transform: scale(1.1);
+   }  
 
    .buttonBoxCopy {
       position: absolute;
@@ -274,6 +349,7 @@ body {
    }
 
    footer p {
+      color: #7A1FA1;
       position: absolute;
       bottom: 10px;
       left: 30px;

@@ -8,13 +8,13 @@ body {
 /* resolução MENOR que 512 */ @media screen and (max-width: 511px) {
 
    .titulo {
-      width: 374px;
+      width: 300px;
       margin: 20px auto;
       text-shadow: 0 0 10px rgb(234, 122, 244, 0.3);
    }
 
    header h1 {
-      font-size: 50px;
+      font-size: 40.5px;
       font-weight: 900;
       color: #7A1FA1;
    }

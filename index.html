@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap" rel="stylesheet">
     <title>De / Codificador</title>
 </head>
 <body>
@@ -21,31 +22,42 @@
 
         <section class="msgInBox">
             <label for="msgIn" class="msgInTitle">Digite sua mensagem</label>
-            <textarea required id="msgIn" autofocus></textarea>
+            <textarea id="msgIn" spellcheck="false" autofocus></textarea>
 
         </section>
 
         <section class="buttons">
             <div class="buttonBox">
-                <p>&#9888; Apenas letras minúsculas e sem acento.</p>
+                <p>&#9888; Letras maiúsculas e acentos serão ignorados.</p>
                 <input type="button" value="Criptografar" class="encode">
                 <input type="button" value="Descriptografar" class="decode">
             </div>
         </section>
         
         <section class="msgOutBox">
-            <textarea required id="msgOut" autofocus placeholder="Nenhuma mensagem para transcrever..."></textarea>
+
+            <textarea readonly id="msgOut" spellcheck="false" autofocus></textarea>
+
+            <div class="noMsg">
+                <img src="msgImg.svg">
+                <p class="noMsgTitle">Nenhuma mensagem encontrada.</p>
+                <p class="noMsgTxt">Digite um texto que você gostaria de codificar ou decodificar.</p>
+            </div>
         </section>
 
         <section class="buttons">
             <div class="buttonBoxCopy">
-                <input type="button" value="Copiar" class="copy">
+                <button class="copy">
+                    <span class="copyTxt">Copiar para área de transferência</span>
+                    Copiar
+                </button>
             </div>
         </section>
 
     </main>
     <footer>
-        <p>Desenvolvido por Gustavo Buzana - 2022</p>
+        <p>Desenvolvido por Gustavo Buzana - 2023</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

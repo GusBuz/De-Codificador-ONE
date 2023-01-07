@@ -51,7 +51,7 @@ body {
       outline: pink;
       margin: 15px auto;
       padding: 20px;
-      width: 90%;
+      width: 85%;
       height: 20vh;
       font-size: 35px;
       color: #7A1FA1;
@@ -67,7 +67,7 @@ body {
       border-radius: 20px;
       margin: 15px auto;
       padding: 20px;
-      width: 90%;
+      width: 85%;
       height: 20vh;
       font-size: 35px;
       color: #7A1FA1;
@@ -115,7 +115,7 @@ body {
       border: none;
       background-color: #7A1FA1;
       color: #FAFAF3;
-      font-size: 21px;
+      font-size: 18px;
       font-weight: bold;
       border-radius: 15px;
       width: 42vw;

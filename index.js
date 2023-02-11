@@ -103,4 +103,4 @@ bttCop.onclick = copy
 bttCop.onmouseout = copyOut
 bttEnc.onclick = encode
 bttDec.onclick = decode
-bttClean.onclick = clear
+bttClear.onclick = clear

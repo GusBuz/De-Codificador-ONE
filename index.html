@@ -18,45 +18,51 @@
             <p class="subtitulo">Challenge ONE - Sprint 01</p>
         </div>
     </header>
+
     <main>
+        <div class="messagesBox">
+            <section class="msgInBox">
+                <label for="msgIn" class="msgInTitle">Digite sua mensagem</label>
+                <textarea id="msgIn" spellcheck="false" autofocus></textarea>
 
-        <section class="msgInBox">
-            <label for="msgIn" class="msgInTitle">Digite sua mensagem</label>
-            <textarea id="msgIn" spellcheck="false" autofocus></textarea>
+                <section class="buttonsIn">
+                    <p>&#9888; Letras maiúsculas e acentos serão ignorados.</p>
+                    <div class="buttonBox">
+                        
+                        <input type="button" value="Codificar" class="encode">
+                        <input type="button" value="Decodificar" class="decode">
+                    </div>
+                </section>
+            </section>
 
-        </section>
+            <section class="msgOutBox">
+                <textarea readonly id="msgOut" spellcheck="false" autofocus></textarea>
+                <div class="noMsg">
+                    <img src="./assets/msgImg.svg">
+                    <p class="noMsgTitle">Nenhuma mensagem encontrada.</p>
+                    <p class="noMsgTxt">Digite um texto que você gostaria de codificar ou decodificar.</p>
+                </div>
 
-        <section class="buttons">
-            <div class="buttonBox">
-                <p>&#9888; Letras maiúsculas e acentos serão ignorados.</p>
-                <input type="button" value="Criptografar" class="encode">
-                <input type="button" value="Descriptografar" class="decode">
-            </div>
-        </section>
-        
-        <section class="msgOutBox">
+                <section class="buttonsOut">
+                <div class="buttonBoxCopy">
+                    <button class="clear">Limpar</button>
 
-            <textarea readonly id="msgOut" spellcheck="false" autofocus></textarea>
-
-            <div class="noMsg">
-                <img src="./assets/msgImg.svg">
-                <p class="noMsgTitle">Nenhuma mensagem encontrada.</p>
-                <p class="noMsgTxt">Digite um texto que você gostaria de codificar ou decodificar.</p>
-            </div>
-        </section>
-
-        <section class="buttons">
-            <div class="buttonBoxCopy">
-                <button class="copy">
-                    <span class="copyTxt">Copiar para área de transferência</span>
-                    Copiar
-                </button>
-            </div>
-        </section>
-
+                    <button class="copy">
+                        <span class="copyTxt">Copiar para área de transferência</span>
+                        Copiar
+                    </button>                   
+                </div>
+                </section>
+            </section>    
+               
+            
+        </div>
     </main>
+
     <footer>
         <p>Desenvolvido por Gustavo Buzana - 2023</p>
+        <a href="https://github.com/GusBuz"><img src="./assets/github.svg" alt="Logotipo do Github" class="logosFooter"></a>
+        <a href="https://www.linkedin.com/in/gusbuzana/"><img src="./assets/linkedin.svg" alt="Logotipo do Linkedin" class="logosFooter"></a>
     </footer>
     <script src="index.js"></script>
 </body>
